@@ -7,9 +7,9 @@ As of now (June 2016), 'sozi-to-pdf' renders each frame as a PNG image to produc
 
 
 ## How to use it?
-If the Inkscape svg-file is ./presentation.svg and the Sozi JSON file ./presentation.sozi.json, then
+If the SVG-file is ./presentation.svg and the Sozi JSON file ./presentation.sozi.json, then
 ```bash
-./sozi2pdf presentation
+./sozi2pdf.py presentation
 ```
 will produce ./presentation.pdf.
 
@@ -21,7 +21,7 @@ will produce ./presentation.pdf.
 
 ## Known problems:
 * Presentations with multiple layers are not yet supported. 
-* Very tiny objects might be missing in the PDF. This is due to https://bugs.launchpad.net/inkscape/+bug/1174909. As a workaround, scaling of the whole document to increase the size of the tiny objects should help.
+* Very tiny objects might be missing in the PDF. This is due to a bug described [here](https://bugs.launchpad.net/inkscape/+bug/1174909). As a workaround, scaling of the whole document to increase the size of the tiny objects should help.
 
 
 
